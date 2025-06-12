@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 20px;
+  padding: 0;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.back {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.back:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+table tr:hover {
+  background-color: #f1f7ff;
+}
+
+td button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+td button[style*="color: red"] {
+  background-color: #ffdddd;
+  color: #dc3545;
+}
+
+td button[style*="color: red"]:hover {
+  background-color: #f5c6cb;
+}
+
+td button:not([style*="color: red"]) {
+  background-color: #17a2b8;
+  color: white;
+}
+
+td button:not([style*="color: red"]):hover {
+  background-color: #138496;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  td {
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td:before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #555;
+  }
+
+  td:nth-of-type(1):before { content: "Order ID"; }
+  td:nth-of-type(2):before { content: "Customer Name"; }
+  td:nth-of-type(3):before { content: "Phone"; }
+  td:nth-of-type(4):before { content: "Address"; }
+  td:nth-of-type(5):before { content: "Product Name"; }
+  td:nth-of-type(6):before { content: "Price"; }
+  td:nth-of-type(7):before { content: "Quantity"; }
+  td:nth-of-type(8):before { content: "Image"; }
+  td:nth-of-type(9):before { content: "Payment"; }
+  td:nth-of-type(10):before { content: "Delivery"; }
+  td:nth-of-type(11):before { content: "Status"; }
+  td:nth-of-type(12):before { content: "Action"; }
+}
