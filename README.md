@@ -1,4 +1,4 @@
-Hi! Im Arham Ahmed, and VirtualFit is a project I came up with as part of my final year in Computer Science. It brings together my interest in tech and design to solve a real problem in online shopping.
+Hi! Im Arham Ahmed, and VirtualFit is a project I came up with as part of my final year project in Computer Science. It brings together my interest in tech and design to solve a real problem in online shopping.
 
 
 
